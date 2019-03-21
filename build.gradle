@@ -28,7 +28,7 @@ task clean(type: Delete) {
 
 ext {
     //是否允许组件单独调试
-    isRunAlone = false
+    isRunAlone = true
     //applicationId
     applicationId = "com.yangwei.www.welcomecomponent"
     //公共属性，包括依赖包统一引用
