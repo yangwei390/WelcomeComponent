@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--等待loading对话框-->
+    <style name="base_style_common_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="base_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/base_color_0C9BFF</item>
+        <item name="colorPrimaryDark">@color/base_color_0C9BFF</item>
+        <item name="colorAccent">@color/base_color_0C9BFF</item>
+        <item name="android:windowAnimationStyle">@style/base_activityAnimation</item>
+    </style>
+
+    <!-- activity动画样式 -->
+    <style name="base_activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_static_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_static_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+</resources>

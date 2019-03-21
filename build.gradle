@@ -1,0 +1,55 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    //是否允许组件单独调试
+    isRunAlone = false
+    //applicationId
+    applicationId = "com.yangwei.www.welcomecomponent"
+    //公共属性，包括依赖包统一引用
+    /**
+     * 最小版本
+     */
+    minSdkVersion = 15
+    /**
+     * 目标版本
+     */
+    targetSdkVersion = 28
+    /**
+     * 编译sdk版本
+     */
+    compileSdkVersion = 28
+    /**
+     * 编译工具版本
+     */
+//    buildToolsVer = "26.0.2"
+    /**
+     * 编译引用包版本
+     */
+//    com_android_support ="25.0.0"
+}
